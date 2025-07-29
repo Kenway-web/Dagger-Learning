@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
 
+
 }
 
 android {
@@ -49,7 +50,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     // In build.gradle (Module: app)
-    implementation(libs.dagger)
-    annotationProcessor(libs.dagger.compiler)
+    implementation(libs.dagger.v251)
+
+    kapt(libs.dagger.compiler)
 
 }
