@@ -31,4 +31,5 @@ class MyApplication : Application() {
 
 //.applicationModule(ApplicationModule(this))
 //if u see this as deprecated bcz whatever the module is providing we are not using this
+// only then it will be deprecated
 

@@ -2,6 +2,7 @@ package com.music.daggerlearningproject.di.component
 
 import android.app.Application
 import com.music.daggerlearningproject.MyApplication
+import com.music.daggerlearningproject.data.HttpClient
 import com.music.daggerlearningproject.di.module.ApplicationModule
 import dagger.Component
 import javax.inject.Singleton
@@ -12,4 +13,7 @@ import javax.inject.Singleton
 interface ApplicationComponent {
 
     fun inject(application: MyApplication)
+
+    fun getHttpClient(): HttpClient
+
 }
